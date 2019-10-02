@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_71123"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"></ImageView>
+
+        <EditText
+            android:id="@+id/amountET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your amount"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"></EditText>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <RadioButton
+                android:id="@+id/dollartotakaRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DollartoTaka"
+                android:checked="true"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/takatodollarRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TakatoDollar"></RadioButton>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/convertBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:background="#000000"
+            android:textColor="#FFFFFF "></Button>
+
+        <TextView
+            android:id="@+id/resultTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"></TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
